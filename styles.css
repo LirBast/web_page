@@ -1,0 +1,203 @@
+:root {
+  --color-acento: #12aff4;
+  --color-division: #e0e0e0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #889ba0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header fijo */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 6px 15px;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+/* Navbar fija */
+.navbar {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-division);
+  z-index: 999;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+.navbar a {
+  color: #040706;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.navbar a:hover {
+  background: #f0f0f0;
+  border-color: #ccc;
+  color: #000;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #fff;
+  border: 1px solid var(--color-division);
+  border-radius: 8px;
+  padding: 40px 20px;
+  flex-shrink: 0;
+}
+.sidebar__foto {
+  width: 180px;               /* más grande */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: contain;        /* ⬅ evita que quede pegada */
+  background-color: #fff;     /* fondo blanco para el círculo */
+  padding: 15px;              /* ⬅ espacio interno entre la cara y el borde */
+  display: block;
+  margin: 20px auto 30px;
+  border: 2px solid #ccc;
+}
+.sidebar h2 {
+  text-align: center;
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+.sidebar__sub {
+  font-size: 13px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Botones del sidebar */
+.sidebar__links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+.sidebar__github,
+.sidebar__links a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 12px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.sidebar__github:hover,
+.sidebar__links a:hover {
+  background: #f0f0f0;
+  border-color: #ccc;
+  color: #000;
+}
+
+/* Contenido */
+.content {
+  flex: 1;
+  margin-left: 20px;
+}
+.seccion {
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-division);
+  padding: 20px;
+}
+.seccion__titulo {
+  color: var(--color-acento);
+  border-bottom: 2px solid var(--color-acento);
+  margin: 0 0 15px;
+  font-size: 1.3em;
+}
+.seccion__body {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.seccion__body h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Proyectos */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #f9f9f9;
+  border: 1px solid var(--color-division);
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.project-card h4 {
+  margin: 0 0 8px;
+  color: var(--color-acento);
+}
+.project-card p {
+  font-size: 0.9em;
+  margin: 0 0 12px;
+}
+.project-card .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--color-acento);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project-card .btn:hover {
+  background: #0b708f;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 0.9em;
+}

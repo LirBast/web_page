@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Liroy Cataldo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Barra superior -->
+  <header class="header">
+    <span>Liroy Cataldo - Estudiante de Ciencia de Datos</span>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+      <li><a href="#proyectos"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Foto de perfil actualizada en carpeta imagenes -->
+      <img src="imagenes/perfil.png" alt="Foto de perfil" class="sidebar__foto">
+      <h2>Liroy Cataldo</h2>
+      <p class="sidebar__sub">Licenciado en Ciencias de la Ingeniería</p>
+      <p class="sidebar__sub">Ingeniero Civil Industrial</p>
+      <p class="sidebar__sub">Estudiante de Ciencia de Datos</p>
+
+      <a href="https://github.com/LirBast/Portafolio" target="_blank" class="sidebar__github">
+        🔗 github.com
+      </a>
+
+      <ul class="sidebar__links">
+        <li><a href="mailto:liroybast@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+        <li><a href="https://www.linkedin.com/in/liroycataldo" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="content">
+      <!-- Bloque sobre mí -->
+      <section id="sobre-mi" class="seccion">
+        <div class="seccion__header">
+          <h3 class="seccion__titulo"><i class="fas fa-user"></i> Sobre mí</h3>
+        </div>
+        <div class="seccion__contenido">
+          <div class="seccion__body">
+            <h4>Perfil</h4>
+            <p>
+              Soy <strong>Liroy Cataldo</strong>, <strong>Licenciado en Ciencias de la Ingeniería e Ingeniero Civil Industrial</strong> titulado de la Universidad Andrés Bello (2018), con un marcado interés en el manejo de datos, la programación y la ciencia de datos. 
+              A lo largo de mi formación y experiencia he desarrollado habilidades en estadística, Python y herramientas ofimáticas, además de una gran disposición al trabajo en equipo y capacidad de innovación. 
+              Me motiva aplicar la analítica de datos en la gestión comercial, la optimización de procesos y la toma de decisiones. 
+              Fuera del ámbito profesional, me apasiona la lectura y mantenerme activo mediante el fútbol y el running.
+            </p>
+
+            <h4>Experiencia</h4>
+            <p>
+              Mi trayectoria laboral comenzó en 2012 como ayudante en la construcción y mantención de hornos industriales en la Cristalería Chile (Vidalfa y Solref Ltda.). 
+              Ese mismo año cofundé la <strong>Sociedad Hermanos Cataldo</strong>, empresa familiar dedicada al corretaje agrícola y viveros, donde me desempeñé como Subgerente Semi-Senior apoyando en la gestión de cuentas, facturación y administración general.
+            </p>
+            <p>
+              En 2017 realicé mi práctica profesional en <strong>MaxControl Spa</strong>, participando en estudios de mercado en la industria energética y de desalinización, además de colaborar en marketing y proyectos industriales. 
+              Tras finalizar esa práctica, decidí dedicarme de lleno a mi empresa familiar, donde actualmente me desempeño como <strong>Jefe de Bodega y Producción de Productos Agrícolas</strong>, liderando procesos logísticos, gestión de inventarios y la producción y distribución de productos agrícolas.
+            </p>
+
+            <h4>Educación</h4>
+            <p>
+              Realicé mis estudios básicos y medios en Cabildo, para luego continuar en Viña del Mar, donde obtuve mi licenciatura y título profesional. 
+              En 2025 reforcé mi camino hacia la ciencia de datos con el programa <strong>Fundamentos de Ciencia de Datos - Talento Digital</strong>, un curso intensivo que fortaleció mis bases en estadística, Python y machine learning.
+            </p>
+
+            <h4>Habilidades</h4>
+            <ul>
+              <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
+              <li>Machine Learning con Scikit-learn</li>
+              <li>Redes Neuronales con Keras/TensorFlow</li>
+              <li>Big Data con PySpark</li>
+              <li>Estadística avanzada con SciPy y Statsmodels</li>
+              <li>Trabajo en equipo y pensamiento crítico</li>
+              <li>Word, Excel y PowerPoint</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="proyectos" class="seccion">
+        <div class="seccion__header">
+          <h3 class="seccion__titulo"><i class="fas fa-project-diagram"></i> Proyectos</h3>
+        </div>
+        <div class="seccion__contenido">
+          <div class="seccion__body">
+            <p>📌 Aquí puedes ver algunos de los proyectos que he realizado, aplicando diferentes técnicas de análisis de datos, estadística y machine learning.</p>
+          </div>
+        </div>
+
+        <div class="seccion__contenido proyectos-grid">
+          <div class="project-card"><h4>📈 Módulo 2 – Estadística descriptiva</h4><p>Análisis de un dataset real.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/Modulo%202" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>🎲 Módulo 3 – Probabilidades</h4><p>Simulaciones y distribuciones.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%203" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>📊 Módulo 4 – Inferencia estadística</h4><p>Pruebas de hipótesis.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%204/Consolidado" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>🧪 Módulo 5 – Diseño de experimentos</h4><p>Evaluación de programas.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%205/Consolidado" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>🌱 Módulo 6 – ML supervisado</h4><p>Modelos de regresión y clasificación.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%206/consolidado" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>🎵 Módulo 7 – ML no supervisado</h4><p>Clústeres y PCA.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%207/Consolidado" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>🧠 Módulo 8 – Redes Neuronales</h4><p>Predicción con Keras.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%208/Consolidado" target="_blank" class="btn">Ver proyecto</a></div>
+          <div class="project-card"><h4>🌍 Módulo 9 – Big Data con Spark</h4><p>Análisis con PySpark.</p><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%209/Consolidado" target="_blank" class="btn">Ver proyecto</a></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Liroy Cataldo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
