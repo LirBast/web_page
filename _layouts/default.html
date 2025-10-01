@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/post-container.css' | relative_url }}">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  {% if page.layout == 'post' %}
+    <link rel="stylesheet" href="{{ '/assets/css/posts.css' | relative_url }}">
+  {% endif %}
+
+  {% include head.html %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    {% include header.html %}
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        {% include sidebar-left.html %}
+      </aside>
+
+      <main class="content">
+        {{ content }}
+      </main>
+
+      <aside class="sidebar-right">
+        {% include sidebar-right.html %}
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

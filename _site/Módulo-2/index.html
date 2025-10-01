@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>📚 Módulo 2 – Libros & Bytes | Liroy Cataldo - Estudiante de Ciencia de Datos</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post-container.css">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  
+    <link rel="stylesheet" href="/assets/css/posts.css">
+  
+
+  <!-- Metadatos adicionales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liroy Cataldo — Data Science Trainee</h1>
+<nav>
+  <a href="/">Inicio</a>
+  <a href="/about/">Acerca de</a>
+  <a href="/blog/">Blog</a>
+  <a href="/laboratorio/">Laboratorio</a>
+</nav>
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        <h2></h2>
+<img src="/images/perfil.png" alt="Foto de perfil" style="border-radius: 10px; width: 100%;" />
+<div class="sidebar-text-container" style="text-align: center;">
+  <p>Liroy Cataldo<br>
+  <br>
+  Licenciado en Ciencias de la Ingeniería<br>
+  <br>
+  Ingeniero Civil Industrial<br>
+  <br>
+  Estudiante de Ciencia de Datos</p>
+</div>
+<div style="text-align: center; margin-top: 15px;">
+  <!-- <a href="https://facebook.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #3b5998; color: white;">Facebook</a> -->
+  <!-- <a href="https://twitter.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #00acee; color: white;">Twitter</a> -->
+  <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #0e76a8; color: white;">LinkedIn</a> -->
+  <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #c32aa3; color: white;">Instagram</a> -->
+  <a href="http://www.youtube.com/@BastDataScience/videos" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #ff0000; color: white;">YouTube</a>
+</div>
+      </aside>
+
+      <main class="content">
+        <main class="site-main post-page" style="margin:0; padding:0;">
+  <div class="container" style="margin:0; padding:0;">
+    <article class="post post-container" style="margin:0; padding:0; box-shadow:none; border-radius:0; background:none;">
+      
+      <h1 class="post-title" style="margin:0; padding:0;">📚 Módulo 2 – Libros & Bytes</h1>
+
+      <section class="post-content" style="margin:0; padding:0;">
+        <p>Este proyecto corresponde al <strong>Módulo 2 del Bootcamp de Ciencia de Datos</strong>.<br />
+El objetivo fue implementar un sistema para una pequeña cadena de librerías llamada <em>Libros &amp; Bytes</em>, donde se desarrolla la lógica de gestión de inventario y simulación de compras en línea.<br />
+El foco está en la <strong>programación en Python</strong>, sin interfaz visual, cumpliendo los requerimientos de control de flujo, funciones, condiciones, descuentos y facturación.</p>
+
+<h2 id="-repositorio">🌐 Repositorio</h2>
+<ul>
+  <li><a href="https://github.com/LirBast/Portafolio/tree/portafolio/Modulo%202">Ver en GitHub</a></li>
+</ul>
+
+<h2 id="️-tecnologías-usadas">🛠️ Tecnologías usadas</h2>
+<ul>
+  <li>Python 3</li>
+  <li>Librerías: manejo nativo de listas y diccionarios</li>
+  <li>Estructuras de control (<code class="language-plaintext highlighter-rouge">if</code>, <code class="language-plaintext highlighter-rouge">for</code>, <code class="language-plaintext highlighter-rouge">while</code>)</li>
+  <li>Jupyter Notebook para pruebas y ejecución</li>
+</ul>
+
+<h2 id="-requerimientos-implementados">📋 Requerimientos implementados</h2>
+<ol>
+  <li><strong>📑 Definición de variables básicas y tipos de datos</strong>
+    <ul>
+      <li>Lista de diccionarios con al menos 5 libros (<code class="language-plaintext highlighter-rouge">título</code>, <code class="language-plaintext highlighter-rouge">autor</code>, <code class="language-plaintext highlighter-rouge">precio</code>, <code class="language-plaintext highlighter-rouge">stock</code>).</li>
+    </ul>
+  </li>
+  <li><strong>🔄 Control de flujo</strong>
+    <ul>
+      <li>Función <code class="language-plaintext highlighter-rouge">mostrar_libros_disponibles()</code> que muestra los libros con stock disponible.</li>
+    </ul>
+  </li>
+  <li><strong>⚖️ Condiciones y operadores</strong>
+    <ul>
+      <li>Filtrado de libros según rango de precios ingresado por el usuario.</li>
+    </ul>
+  </li>
+  <li><strong>🛒 Función personalizada para compras</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">comprar_libros(título, cantidad)</code> verifica existencia, stock y calcula el monto total.</li>
+    </ul>
+  </li>
+  <li><strong>♻️ Bucle while interactivo</strong>
+    <ul>
+      <li>Permite múltiples compras hasta que el usuario decida salir.</li>
+    </ul>
+  </li>
+  <li><strong>💸 Gestión de descuentos</strong>
+    <ul>
+      <li>Descuentos según título (ejemplo: 10% en <em>Introducción a Python</em>, 20% en <em>El señor de los anillos</em>, etc.).</li>
+      <li>Muestra total sin descuento, monto descontado y total final.</li>
+    </ul>
+  </li>
+  <li><strong>🧾 Simulación de factura</strong>
+    <ul>
+      <li>Resumen final con: libros comprados, total sin descuento, descuento aplicado y monto total.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="-resultados-principales">🎯 Resultados principales</h2>
+<ul>
+  <li>Sistema funcional que permite:
+    <ul>
+      <li>Consultar disponibilidad de libros.</li>
+      <li>Filtrar por precio.</li>
+      <li>Comprar libros con descuentos.</li>
+      <li>Generar facturas de compra.</li>
+    </ul>
+  </li>
+  <li>Simulación realista de un sistema de librería.</li>
+</ul>
+
+<h2 id="-video-explicativo-del-código">🎥 Video explicativo del código</h2>
+<p><a href="https://youtu.be/jTXsT8CtuQg"><img src="https://img.youtube.com/vi/GmA9aEOs20Q/0.jpg" alt="Ver en YouTube" /></a></p>
+
+<hr />
+
+<p>✍️ <em>Autor: Liroy Cataldo</em><br />
+📧 Contacto: <a href="mailto:liroybast@gmail.com">liroybast@gmail.com</a></p>
+
+<p>💬 <em>Para ayudas, sugerencias o dudas, por favor deja tus comentarios en el video de YouTube.</em></p>
+
+      </section>
+
+    </article>
+  </div>
+</main>
+
+      </main>
+
+      <aside class="sidebar-right">
+        
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Información principal -->
+    <p>© 2025 - Liroy Cataldo - Estudiante de Ciencia de Datos. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="footer-nav">
+      <a href="/">Inicio</a>
+      <a href="/about/">Sobre mí</a>
+      <a href="/blog/">Blog</a>
+      <a href="/laboratorio/">Laboratorio</a>
+      <!-- <a href="/contact/">Contacto</a> -->
+    </nav>
+
+    <!-- Redes sociales -->
+    <!-- <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div> -->
+  </div>
+</footer>
+
+
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

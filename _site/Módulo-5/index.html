@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> 🎓 Módulo 5 – Diseño y Análisis de un Experimento sobre el Rendimiento Académico | Liroy Cataldo - Estudiante de Ciencia de Datos</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post-container.css">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  
+    <link rel="stylesheet" href="/assets/css/posts.css">
+  
+
+  <!-- Metadatos adicionales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liroy Cataldo — Data Science Trainee</h1>
+<nav>
+  <a href="/">Inicio</a>
+  <a href="/about/">Acerca de</a>
+  <a href="/blog/">Blog</a>
+  <a href="/laboratorio/">Laboratorio</a>
+</nav>
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        <h2></h2>
+<img src="/images/perfil.png" alt="Foto de perfil" style="border-radius: 10px; width: 100%;" />
+<div class="sidebar-text-container" style="text-align: center;">
+  <p>Liroy Cataldo<br>
+  <br>
+  Licenciado en Ciencias de la Ingeniería<br>
+  <br>
+  Ingeniero Civil Industrial<br>
+  <br>
+  Estudiante de Ciencia de Datos</p>
+</div>
+<div style="text-align: center; margin-top: 15px;">
+  <!-- <a href="https://facebook.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #3b5998; color: white;">Facebook</a> -->
+  <!-- <a href="https://twitter.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #00acee; color: white;">Twitter</a> -->
+  <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #0e76a8; color: white;">LinkedIn</a> -->
+  <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #c32aa3; color: white;">Instagram</a> -->
+  <a href="http://www.youtube.com/@BastDataScience/videos" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #ff0000; color: white;">YouTube</a>
+</div>
+      </aside>
+
+      <main class="content">
+        <main class="site-main post-page" style="margin:0; padding:0;">
+  <div class="container" style="margin:0; padding:0;">
+    <article class="post post-container" style="margin:0; padding:0; box-shadow:none; border-radius:0; background:none;">
+      
+      <h1 class="post-title" style="margin:0; padding:0;"> 🎓 Módulo 5 – Diseño y Análisis de un Experimento sobre el Rendimiento Académico</h1>
+
+      <section class="post-content" style="margin:0; padding:0;">
+        <p>Este proyecto corresponde al <strong>Módulo 5 del Bootcamp de Ciencia de Datos</strong>.<br />
+El objetivo fue <strong>evaluar estadísticamente si un nuevo programa de tutoría mejora el rendimiento académico de los estudiantes</strong>, aplicando conceptos de diseño experimental, estadística descriptiva, pruebas de hipótesis e intervalos de confianza.</p>
+
+<hr />
+
+<h2 id="-repositorio">🌐 Repositorio</h2>
+<ul>
+  <li><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%205/Consolidado">Ver en GitHub</a></li>
+</ul>
+
+<hr />
+
+<h2 id="️-tecnologías-usadas">🛠️ Tecnologías usadas</h2>
+<ul>
+  <li>Python (NumPy, SciPy, Matplotlib)</li>
+  <li>Estadística Inferencial y Pruebas de Hipótesis</li>
+</ul>
+
+<hr />
+
+<h2 id="-requerimientos-implementados">📋 Requerimientos implementados</h2>
+<ol>
+  <li><strong>🧪 Diseño del Experimento</strong>
+    <ul>
+      <li>Grupo A (15 estudiantes): recibió el programa de tutoría.</li>
+      <li>Grupo B (15 estudiantes): grupo de control.</li>
+      <li>Propuesta de mejoras al diseño para reducir sesgos:
+        <ul>
+          <li>Aumentar el tamaño de la muestra.</li>
+          <li>Medir el rendimiento previo de los estudiantes.</li>
+          <li>Asegurar asignación completamente aleatoria.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>📊 Estadísticas Descriptivas</strong>
+    <ul>
+      <li>Media y desviación estándar de ambos grupos.</li>
+      <li>Histogramas de distribución de calificaciones por grupo.</li>
+      <li>Diagrama de caja comparativo para detectar diferencias y outliers.</li>
+    </ul>
+  </li>
+  <li><strong>📈 Prueba de Hipótesis (t-test)</strong>
+    <ul>
+      <li>Hipótesis nula (H0): no hay diferencia en el rendimiento académico entre los grupos.</li>
+      <li>Hipótesis alternativa (H1): el grupo con tutoría tiene mejor rendimiento.</li>
+      <li>Prueba t para muestras independientes con α = 0.05.</li>
+      <li>Interpretación del valor p y decisión estadística.</li>
+    </ul>
+  </li>
+  <li><strong>📉 Intervalo de Confianza (95%)</strong>
+    <ul>
+      <li>Intervalo de confianza para la diferencia de medias entre Grupo A y Grupo B.</li>
+      <li>Interpretación de la magnitud de la mejora atribuida al programa de tutoría.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="-resultados-principales">🎯 Resultados principales</h2>
+<ul>
+  <li><strong>Grupo A (Tutoría):</strong>
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Media ≈ 86.0</td>
+              <td>Desviación estándar ≈ 3.9</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Grupo B (Control):</strong>
+    <ul>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Media ≈ 74.7</td>
+              <td>Desviación estándar ≈ 3.6</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ul>
+  </li>
+  <li>La prueba t arrojó un valor <strong>p &lt; 0.05</strong>, lo que permitió <strong>rechazar H0</strong> y concluir que el programa de tutoría <strong>sí mejora el rendimiento académico</strong>.</li>
+  <li>El <strong>intervalo de confianza del 95%</strong> para la diferencia de medias fue aproximadamente <strong>[7.9 , 13.7]</strong>, confirmando que los estudiantes con tutoría obtuvieron entre <strong>8 y 14 puntos más</strong> que los del grupo de control.</li>
+</ul>
+
+<hr />
+
+<h2 id="-visualizaciones">📊 Visualizaciones</h2>
+<p>Algunas de las visualizaciones generadas en este módulo:</p>
+
+<ul>
+  <li>
+    <p><strong>Figura 1:</strong> Histograma Grupo A<br />
+<img src="/assets/images/20250110_mod5/Figure_1.png" alt="Figura 1" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 2:</strong> Histograma Grupo B<br />
+<img src="/assets/images/20250110_mod5/Figure_2.png" alt="Figura 2" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 3:</strong> Boxplot comparativo<br />
+<img src="/assets/images/20250110_mod5/Figure_3.png" alt="Figura 3" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-reflexiones-del-ejercicio">📝 Reflexiones del Ejercicio</h2>
+<ul>
+  <li>📌 El diseño experimental puede mejorarse aumentando la muestra, midiendo el desempeño previo de los estudiantes y garantizando la asignación aleatoria.</li>
+  <li>📌 Si la división de grupos no fue completamente aleatoria, los resultados pueden estar sesgados.</li>
+  <li>📌 La prueba t mostró un valor p significativamente menor que 0.05, lo que confirma que la tutoría tiene un <strong>impacto positivo y real</strong> en el rendimiento.</li>
+  <li>📌 El intervalo de confianza sugiere que la mejora promedio está entre <strong>8 y 14 puntos</strong>, lo que da evidencia sólida de la efectividad del programa.</li>
+  <li>📌 A pesar de los buenos resultados, se recomienda reforzar el diseño experimental para asegurar que la diferencia observada se deba únicamente al programa de tutoría.</li>
+</ul>
+
+<hr />
+
+<p>✍️ <em>Autor: Liroy Cataldo</em></p>
+
+      </section>
+
+    </article>
+  </div>
+</main>
+
+      </main>
+
+      <aside class="sidebar-right">
+        
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Información principal -->
+    <p>© 2025 - Liroy Cataldo - Estudiante de Ciencia de Datos. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="footer-nav">
+      <a href="/">Inicio</a>
+      <a href="/about/">Sobre mí</a>
+      <a href="/blog/">Blog</a>
+      <a href="/laboratorio/">Laboratorio</a>
+      <!-- <a href="/contact/">Contacto</a> -->
+    </nav>
+
+    <!-- Redes sociales -->
+    <!-- <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div> -->
+  </div>
+</footer>
+
+
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

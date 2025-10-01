@@ -1,0 +1,88 @@
+/* Estilos específicos para el layout default.html */
+
+/* Contenedor principal con layout de tres columnas */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+}
+
+/* Layout con sidebar izquierdo, contenido y sidebar derecho */
+.layout {
+  display: flex;
+  flex: 1;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .content, .sidebar-right {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* ================================
+   EFECTOS SUAVES (sin cambiar tamaños)
+   ================================ */
+
+/* Transiciones suaves en enlaces de todo el layout */
+.sidebar-left a,
+.sidebar-right a,
+.content a {
+  transition: color .25s ease, background-color .25s ease, text-decoration-color .25s ease;
+}
+
+/* Hover sutil en enlaces (manteniendo paleta negro/blanco/plomo) */
+.sidebar-left a:hover,
+.sidebar-right a:hover,
+.content a:hover {
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+/* Focus accesible (teclado) en enlaces */
+.sidebar-left a:focus-visible,
+.sidebar-right a:focus-visible,
+.content a:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Si hay listas de navegación en sidebars, realce del item en hover */
+.sidebar-left li a,
+.sidebar-right li a {
+  transition: background-color .25s ease, color .25s ease;
+}
+.sidebar-left li a:hover,
+.sidebar-right li a:hover {
+  background-color: #eee; /* plomo claro, sin cambiar layout */
+  color: #111;
+}
+
+/* Botones o elementos clicables genéricos dentro del layout */
+.layout :where(button, .btn, [role="button"]) {
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease, transform .2s ease;
+}
+.layout :where(button, .btn, [role="button"]):hover {
+  transform: translateY(-1px);
+}
+.layout :where(button, .btn, [role="button"]):focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 3px;
+}
+
+/* Respeta preferencia de reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

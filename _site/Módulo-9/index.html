@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🌍 Módulo 9 – Análisis de Movimientos Migratorios con Spark | Liroy Cataldo - Estudiante de Ciencia de Datos</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post-container.css">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  
+    <link rel="stylesheet" href="/assets/css/posts.css">
+  
+
+  <!-- Metadatos adicionales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liroy Cataldo — Data Science Trainee</h1>
+<nav>
+  <a href="/">Inicio</a>
+  <a href="/about/">Acerca de</a>
+  <a href="/blog/">Blog</a>
+  <a href="/laboratorio/">Laboratorio</a>
+</nav>
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        <h2></h2>
+<img src="/images/perfil.png" alt="Foto de perfil" style="border-radius: 10px; width: 100%;" />
+<div class="sidebar-text-container" style="text-align: center;">
+  <p>Liroy Cataldo<br>
+  <br>
+  Licenciado en Ciencias de la Ingeniería<br>
+  <br>
+  Ingeniero Civil Industrial<br>
+  <br>
+  Estudiante de Ciencia de Datos</p>
+</div>
+<div style="text-align: center; margin-top: 15px;">
+  <!-- <a href="https://facebook.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #3b5998; color: white;">Facebook</a> -->
+  <!-- <a href="https://twitter.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #00acee; color: white;">Twitter</a> -->
+  <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #0e76a8; color: white;">LinkedIn</a> -->
+  <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #c32aa3; color: white;">Instagram</a> -->
+  <a href="http://www.youtube.com/@BastDataScience/videos" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #ff0000; color: white;">YouTube</a>
+</div>
+      </aside>
+
+      <main class="content">
+        <main class="site-main post-page" style="margin:0; padding:0;">
+  <div class="container" style="margin:0; padding:0;">
+    <article class="post post-container" style="margin:0; padding:0; box-shadow:none; border-radius:0; background:none;">
+      
+      <h1 class="post-title" style="margin:0; padding:0;">🌍 Módulo 9 – Análisis de Movimientos Migratorios con Spark</h1>
+
+      <section class="post-content" style="margin:0; padding:0;">
+        <p>Este proyecto corresponde al <strong>Módulo 9 del Bootcamp de Ciencia de Datos</strong>.<br />
+El objetivo fue aplicar conceptos de <strong>Big Data con Apache Spark y PySpark</strong> para analizar patrones de migración humana, utilizando RDDs, DataFrames, Spark SQL y MLlib para predicción de flujos migratorios.</p>
+
+<hr />
+
+<h2 id="-enunciado">📘 Enunciado</h2>
+
+<p><strong>EVALUACIÓN FINAL: ANÁLISIS DE MOVIMIENTOS MIGRATORIOS CON SPARK</strong></p>
+
+<p>Eres parte de un equipo de analistas de datos encargado de estudiar las tendencias de migración humana en el siglo XXI utilizando Big Data. Para ello, trabajarás con un conjunto de datos que contiene información sobre migraciones entre distintos países, sus causas y el impacto socioeconómico en las regiones de origen y destino.</p>
+
+<p><strong>Objetivos de la actividad:</strong></p>
+<ol>
+  <li>Aplicar conceptos de Big Data utilizando Apache Spark y PySpark.</li>
+  <li>Explorar y transformar datos con RDDs y DataFrames.</li>
+  <li>Realizar consultas con Spark SQL.</li>
+  <li>Implementar modelos de aprendizaje automático con MLlib.</li>
+</ol>
+
+<hr />
+
+<h2 id="-repositorio">🌐 Repositorio</h2>
+<ul>
+  <li><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%209/Consolidado">Ver en GitHub</a></li>
+</ul>
+
+<hr />
+
+<h2 id="️-tecnologías-usadas">🛠️ Tecnologías usadas</h2>
+<ul>
+  <li>
+    <p>Python + Google Colab</p>
+  </li>
+  <li><strong>Apache Spark / PySpark</strong> (RDDs, DataFrames, Spark SQL, MLlib)</li>
+  <li>Machine Learning con <strong>Logistic Regression</strong> en MLlib</li>
+</ul>
+
+<hr />
+
+<h2 id="-requerimientos-implementados">📋 Requerimientos implementados</h2>
+
+<ol>
+  <li>**📊 Carga y exploración de datos **
+    <ul>
+      <li>Carga del dataset con información migratoria.</li>
+      <li>Conversión a <strong>RDD y DataFrame</strong>.</li>
+      <li>Exploración: primeras filas, esquema y estadísticas descriptivas.</li>
+    </ul>
+  </li>
+  <li>**⚙️ Procesamiento de datos con RDDs y DataFrames **
+    <ul>
+      <li>Transformaciones en RDDs: <code class="language-plaintext highlighter-rouge">filter</code>, <code class="language-plaintext highlighter-rouge">map</code>, <code class="language-plaintext highlighter-rouge">flatMap</code>.</li>
+      <li>Acciones en RDDs: <code class="language-plaintext highlighter-rouge">take</code>, <code class="language-plaintext highlighter-rouge">count</code>, <code class="language-plaintext highlighter-rouge">collect</code>.</li>
+      <li>Operaciones en DataFrames: filtrado, agregaciones y ordenamiento.</li>
+      <li>Exportación de resultados en <strong>formato Parquet</strong>.</li>
+    </ul>
+  </li>
+  <li>**🗂️ Consultas con Spark SQL **
+    <ul>
+      <li>Registro del DataFrame como <strong>tabla temporal</strong>.</li>
+      <li>Consultas de los principales países de origen y destino.</li>
+      <li>Análisis de las principales <strong>razones de migración por región</strong>.</li>
+    </ul>
+  </li>
+  <li>**🤖 Aplicación de MLlib para predicción **
+    <ul>
+      <li>Conversión de datos en vectores de características (<code class="language-plaintext highlighter-rouge">VectorAssembler</code>).</li>
+      <li>Entrenamiento de un modelo de <strong>Regresión Logística</strong>.</li>
+      <li>Evaluación de precisión del modelo.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="-resultados-principales">📊 Resultados principales</h2>
+<ul>
+  <li>RDDs permitieron un manejo flexible de transformaciones (ej. filtrar migraciones económicas).</li>
+  <li>DataFrames y Spark SQL facilitaron consultas complejas, como identificar los principales destinos o las razones más comunes de migración.</li>
+  <li>Se guardaron resultados de agregaciones en formato Parquet para optimizar el almacenamiento.</li>
+  <li>El modelo de <strong>regresión logística</strong> en MLlib logró ejecutarse, pero debido al tamaño muy reducido del dataset (solo 5 registros), la precisión fue <strong>0</strong>, ya que el conjunto de prueba quedó con un solo dato.</li>
+</ul>
+
+<hr />
+
+<h2 id="-reflexión-final">📝 Reflexión Final</h2>
+
+<p>Este módulo permitió integrar el uso de <strong>Big Data con Apache Spark</strong>, explorando cómo trabajar con RDDs, DataFrames y Spark SQL en un flujo completo de análisis. Las transformaciones con RDDs fueron útiles para entender la estructura de los datos en bajo nivel, mientras que los DataFrames y consultas SQL ofrecieron mayor expresividad y eficiencia para agregaciones y análisis exploratorio. La exportación en Parquet reflejó la importancia de usar formatos optimizados en entornos Big Data.</p>
+
+<p>En cuanto al modelado predictivo, la regresión logística en MLlib mostró el procedimiento de preparación de datos, entrenamiento y evaluación. Sin embargo, el tamaño extremadamente reducido del dataset no permitió obtener métricas representativas, lo que evidencia la necesidad de <strong>grandes volúmenes de datos</strong> para que Spark muestre todo su potencial.</p>
+
+<p>En síntesis, este módulo fue un acercamiento valioso a la <strong>analítica de datos a gran escala</strong>, reforzando la importancia del contexto Big Data y el uso de Spark como herramienta central para el procesamiento y análisis de información compleja.</p>
+
+<hr />
+
+<p>✍️ <em>Autor: Liroy Cataldo</em></p>
+
+
+      </section>
+
+    </article>
+  </div>
+</main>
+
+      </main>
+
+      <aside class="sidebar-right">
+        
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Información principal -->
+    <p>© 2025 - Liroy Cataldo - Estudiante de Ciencia de Datos. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="footer-nav">
+      <a href="/">Inicio</a>
+      <a href="/about/">Sobre mí</a>
+      <a href="/blog/">Blog</a>
+      <a href="/laboratorio/">Laboratorio</a>
+      <!-- <a href="/contact/">Contacto</a> -->
+    </nav>
+
+    <!-- Redes sociales -->
+    <!-- <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div> -->
+  </div>
+</footer>
+
+
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

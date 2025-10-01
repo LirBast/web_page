@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> 🏅 Módulo 4 – Análisis de Datos de Atletas Olímpicos | Liroy Cataldo - Estudiante de Ciencia de Datos</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post-container.css">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  
+    <link rel="stylesheet" href="/assets/css/posts.css">
+  
+
+  <!-- Metadatos adicionales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liroy Cataldo — Data Science Trainee</h1>
+<nav>
+  <a href="/">Inicio</a>
+  <a href="/about/">Acerca de</a>
+  <a href="/blog/">Blog</a>
+  <a href="/laboratorio/">Laboratorio</a>
+</nav>
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        <h2></h2>
+<img src="/images/perfil.png" alt="Foto de perfil" style="border-radius: 10px; width: 100%;" />
+<div class="sidebar-text-container" style="text-align: center;">
+  <p>Liroy Cataldo<br>
+  <br>
+  Licenciado en Ciencias de la Ingeniería<br>
+  <br>
+  Ingeniero Civil Industrial<br>
+  <br>
+  Estudiante de Ciencia de Datos</p>
+</div>
+<div style="text-align: center; margin-top: 15px;">
+  <!-- <a href="https://facebook.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #3b5998; color: white;">Facebook</a> -->
+  <!-- <a href="https://twitter.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #00acee; color: white;">Twitter</a> -->
+  <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #0e76a8; color: white;">LinkedIn</a> -->
+  <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #c32aa3; color: white;">Instagram</a> -->
+  <a href="http://www.youtube.com/@BastDataScience/videos" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #ff0000; color: white;">YouTube</a>
+</div>
+      </aside>
+
+      <main class="content">
+        <main class="site-main post-page" style="margin:0; padding:0;">
+  <div class="container" style="margin:0; padding:0;">
+    <article class="post post-container" style="margin:0; padding:0; box-shadow:none; border-radius:0; background:none;">
+      
+      <h1 class="post-title" style="margin:0; padding:0;"> 🏅 Módulo 4 – Análisis de Datos de Atletas Olímpicos</h1>
+
+      <section class="post-content" style="margin:0; padding:0;">
+        <p>Este proyecto corresponde al Módulo 4 del Bootcamp de Ciencia de Datos.<br />
+El objetivo fue analizar patrones de rendimiento deportivo, identificar factores que influyen en el éxito de los atletas y realizar predicciones simples a partir de sus características.</p>
+
+<hr />
+
+<h2 id="-repositorio">🌐 Repositorio</h2>
+<ul>
+  <li><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%204/Consolidado">Ver en GitHub</a></li>
+</ul>
+
+<hr />
+
+<h2 id="️-tecnologías-usadas">🛠️ Tecnologías usadas</h2>
+<ul>
+  <li>Python (Pandas, NumPy, SciPy, Scikit-learn)</li>
+  <li>Seaborn y Matplotlib para visualización</li>
+  <li>Jupyter Notebook / Google Colab</li>
+</ul>
+
+<hr />
+
+<h2 id="-requerimientos-implementados">📋 Requerimientos implementados</h2>
+
+<h3 id="-análisis-exploratorio-de-datos">🔍 Análisis Exploratorio de Datos</h3>
+<ul>
+  <li>Carga y revisión de dataset (<code class="language-plaintext highlighter-rouge">.head()</code>, <code class="language-plaintext highlighter-rouge">.info()</code>, <code class="language-plaintext highlighter-rouge">.describe()</code>).</li>
+  <li>Histograma del número de entrenamientos semanales.</li>
+</ul>
+
+<h3 id="-estadística-descriptiva">📊 Estadística Descriptiva</h3>
+<ul>
+  <li>Identificación de tipo de variable en cada columna.</li>
+  <li>Media, mediana y moda de medallas obtenidas.</li>
+  <li>Desviación estándar de altura de atletas.</li>
+  <li>Detección de valores atípicos en el peso con IQR y boxplot.</li>
+</ul>
+
+<h3 id="-análisis-de-correlación">📈 Análisis de Correlación</h3>
+<ul>
+  <li>Correlación de Pearson entre entrenamientos semanales y medallas totales.</li>
+  <li>Gráfico de dispersión: Peso vs Medallas.</li>
+  <li>Interpretación de significancia estadística.</li>
+</ul>
+
+<h3 id="-regresión-lineal">📉 Regresión Lineal</h3>
+<ul>
+  <li>Modelo para predecir medallas en función de entrenamientos semanales.</li>
+  <li>Obtención de coeficientes (pendiente e intercepto).</li>
+  <li>Cálculo del R² y análisis del ajuste del modelo.</li>
+  <li>Gráfico de regresión con <code class="language-plaintext highlighter-rouge">seaborn.regplot()</code>.</li>
+</ul>
+
+<h3 id="-visualización-de-datos">🎨 Visualización de Datos</h3>
+<ul>
+  <li>Heatmap de correlaciones entre variables numéricas.</li>
+  <li>Boxplot de medallas por disciplina deportiva.</li>
+  <li>Personalización de gráficos con títulos, etiquetas y colores.</li>
+</ul>
+
+<hr />
+
+<h2 id="-resultados-principales">🎯 Resultados principales</h2>
+<ul>
+  <li>Se observaron distribuciones realistas en entrenamientos, altura y peso de atletas.</li>
+  <li>La relación entre entrenamientos semanales y medallas fue positiva, pero estadísticamente no significativa (Pearson = 0.57, p = 0.18).</li>
+  <li>El modelo de regresión lineal explicó un 32% de la varianza (R² = 0.32), lo que indica que existen otros factores importantes además del entrenamiento.</li>
+  <li>No se detectaron outliers relevantes en la variable peso.</li>
+  <li>Se identificaron patrones de medallas en distintas disciplinas deportivas.</li>
+</ul>
+
+<hr />
+
+<h2 id="-visualizaciones">📊 Visualizaciones</h2>
+
+<p>Algunas de las visualizaciones generadas en este módulo:</p>
+
+<ul>
+  <li>
+    <p><strong>Figura 1:</strong> Histograma de entrenamientos semanales<br />
+<img src="/assets/images/20250110_mod4/Figure_1.png" alt="Figura 1" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 2:</strong> Boxplot de peso<br />
+<img src="/assets/images/20250110_mod4/Figure_2.png" alt="Figura 2" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 3:</strong> Gráfico de dispersión (Peso vs Medallas)<br />
+<img src="/assets/images/20250110_mod4/Figure_3.png" alt="Figura 3" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 4:</strong> Regresión lineal (Entrenamientos vs Medallas)<br />
+<img src="/assets/images/20250110_mod4/Figure_4.png" alt="Figura 4" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 5:</strong> Matriz de correlación<br />
+<img src="/assets/images/20250110_mod4/Figure_5.png" alt="Figura 5" /></p>
+  </li>
+  <li>
+    <p><strong>Figura 6:</strong> Boxplot de medallas totales por disciplina deportiva<br />
+<img src="/assets/images/20250110_mod4/Figure_6.png" alt="Figura 6" /></p>
+  </li>
+</ul>
+
+      </section>
+
+    </article>
+  </div>
+</main>
+
+      </main>
+
+      <aside class="sidebar-right">
+        
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Información principal -->
+    <p>© 2025 - Liroy Cataldo - Estudiante de Ciencia de Datos. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="footer-nav">
+      <a href="/">Inicio</a>
+      <a href="/about/">Sobre mí</a>
+      <a href="/blog/">Blog</a>
+      <a href="/laboratorio/">Laboratorio</a>
+      <!-- <a href="/contact/">Contacto</a> -->
+    </nav>
+
+    <!-- Redes sociales -->
+    <!-- <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div> -->
+  </div>
+</footer>
+
+
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

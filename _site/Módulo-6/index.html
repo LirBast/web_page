@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> 🌱 Módulo 6 – Análisis del Impacto del Cambio Climático en la Producción Agrícola | Liroy Cataldo - Estudiante de Ciencia de Datos</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post-container.css">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  
+    <link rel="stylesheet" href="/assets/css/posts.css">
+  
+
+  <!-- Metadatos adicionales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liroy Cataldo — Data Science Trainee</h1>
+<nav>
+  <a href="/">Inicio</a>
+  <a href="/about/">Acerca de</a>
+  <a href="/blog/">Blog</a>
+  <a href="/laboratorio/">Laboratorio</a>
+</nav>
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        <h2></h2>
+<img src="/images/perfil.png" alt="Foto de perfil" style="border-radius: 10px; width: 100%;" />
+<div class="sidebar-text-container" style="text-align: center;">
+  <p>Liroy Cataldo<br>
+  <br>
+  Licenciado en Ciencias de la Ingeniería<br>
+  <br>
+  Ingeniero Civil Industrial<br>
+  <br>
+  Estudiante de Ciencia de Datos</p>
+</div>
+<div style="text-align: center; margin-top: 15px;">
+  <!-- <a href="https://facebook.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #3b5998; color: white;">Facebook</a> -->
+  <!-- <a href="https://twitter.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #00acee; color: white;">Twitter</a> -->
+  <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #0e76a8; color: white;">LinkedIn</a> -->
+  <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #c32aa3; color: white;">Instagram</a> -->
+  <a href="http://www.youtube.com/@BastDataScience/videos" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #ff0000; color: white;">YouTube</a>
+</div>
+      </aside>
+
+      <main class="content">
+        <main class="site-main post-page" style="margin:0; padding:0;">
+  <div class="container" style="margin:0; padding:0;">
+    <article class="post post-container" style="margin:0; padding:0; box-shadow:none; border-radius:0; background:none;">
+      
+      <h1 class="post-title" style="margin:0; padding:0;"> 🌱 Módulo 6 – Análisis del Impacto del Cambio Climático en la Producción Agrícola</h1>
+
+      <section class="post-content" style="margin:0; padding:0;">
+        <p>Este proyecto corresponde al <strong>Módulo 6 del Bootcamp de Ciencia de Datos</strong>.<br />
+El objetivo fue <strong>evaluar cómo los factores climáticos afectan la producción agrícola en distintos países</strong>, aplicando técnicas de <strong>regresión y clasificación supervisada</strong>, junto con <strong>optimización de modelos</strong> y análisis de resultados.</p>
+
+<hr />
+
+<h2 id="-repositorio">🌐 Repositorio</h2>
+<ul>
+  <li><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%206/consolidado">Ver en GitHub</a></li>
+</ul>
+
+<hr />
+
+<h2 id="️-tecnologías-usadas">🛠️ Tecnologías usadas</h2>
+<ul>
+  <li>Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)</li>
+  <li>Modelos de regresión y clasificación</li>
+  <li>Optimización de hiperparámetros con GridSearchCV</li>
+</ul>
+
+<hr />
+
+<h2 id="-requerimientos-implementados">📋 Requerimientos implementados</h2>
+<ol>
+  <li><strong>📊 Carga y Exploración de Datos</strong>
+    <ul>
+      <li>Dataset con variables de clima y producción agrícola.</li>
+      <li>Análisis de nulos, tipos de datos y descripción estadística.</li>
+    </ul>
+  </li>
+  <li><strong>⚙️ Preprocesamiento y Escalamiento</strong>
+    <ul>
+      <li>One-Hot Encoding para variables categóricas (País).</li>
+      <li>Normalización de variables numéricas con <code class="language-plaintext highlighter-rouge">StandardScaler</code>.</li>
+      <li>División en conjunto de entrenamiento (80%) y prueba (20%).</li>
+    </ul>
+  </li>
+  <li><strong>🤖 Modelos de Aprendizaje Supervisado</strong>
+    <ul>
+      <li><strong>Regresión:</strong>
+        <ul>
+          <li>Regresión lineal y polinómica.</li>
+          <li>Árboles de decisión y Random Forest.</li>
+          <li>Métricas: MAE, MSE, R².</li>
+        </ul>
+      </li>
+      <li><strong>Clasificación:</strong>
+        <ul>
+          <li>Variable categórica <strong>Impacto</strong> (Bajo, Medio, Alto).</li>
+          <li>Modelos: KNN, Árbol de Decisión, SVM.</li>
+          <li>Métricas: Accuracy, Precisión, Recall, F1-Score.</li>
+          <li>Curvas ROC-AUC para clases multiclase.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>🔧 Optimización de Modelos</strong>
+    <ul>
+      <li><strong>Random Forest:</strong> ajuste de <code class="language-plaintext highlighter-rouge">max_depth</code>, <code class="language-plaintext highlighter-rouge">min_samples_split</code> y <code class="language-plaintext highlighter-rouge">n_estimators</code>.</li>
+      <li><strong>SVM:</strong> ajuste de <code class="language-plaintext highlighter-rouge">C</code>, <code class="language-plaintext highlighter-rouge">gamma</code> y <code class="language-plaintext highlighter-rouge">kernel</code>.</li>
+      <li>Regularización con <strong>Ridge</strong> y <strong>Lasso</strong>.</li>
+    </ul>
+  </li>
+  <li><strong>📈 Análisis de Resultados y Conclusiones</strong>
+    <ul>
+      <li>Comparación de desempeño entre modelos lineales, polinómicos y basados en árboles.</li>
+      <li>Evaluación de clasificadores según métricas y curvas ROC.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="-resultados-principales">🎯 Resultados principales</h2>
+<ul>
+  <li><strong>Regresiones lineales y polinómicas:</strong> R² bajo o negativo → modelos poco adecuados.</li>
+  <li><strong>Random Forest y Árboles de Decisión:</strong> mejores resultados de predicción (capturan interacciones).</li>
+  <li><strong>Clasificación:</strong>
+    <ul>
+      <li>KNN y Árbol de Decisión → Accuracy ≈ 0.80 y F1 ≈ 0.82.</li>
+      <li>SVM → Accuracy ≈ 0.60 y F1 ≈ 0.45 (mejoró a ≈ 0.66 tras GridSearchCV).</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-visualizaciones">📊 Visualizaciones</h2>
+<p>Algunas de las visualizaciones generadas en este módulo:</p>
+
+<ul>
+  <li>
+    <p><strong>Figuras :</strong> Curvas ROC para clases Bajo, Medio y Alto<br />
+<img src="/assets/images/20250110_mod6/Figure_1.png" alt="Figura 1" /></p>
+
+    <p><img src="/assets/images/20250110_mod6/Figure_2.png" alt="Figura 2" /></p>
+
+    <p><img src="/assets/images/20250110_mod6/Figure_3.png" alt="Figura 3" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-reflexiones-del-ejercicio">📝 Reflexiones del Ejercicio</h2>
+<ul>
+  <li>📌 Los modelos lineales y polinómicos <strong>no son adecuados</strong> para este problema: mostraron R² muy bajos o negativos.</li>
+  <li>📌 <strong>Árboles de Decisión y Random Forest</strong> ofrecieron el mejor rendimiento al capturar interacciones complejas.</li>
+  <li>📌 Los modelos de clasificación <strong>KNN y Árbol</strong> separaron de forma confiable los países según impacto climático, mientras que <strong>SVM tuvo dificultades</strong> incluso tras optimización.</li>
+  <li>📌 La optimización con <strong>GridSearchCV</strong> mejoró ligeramente SVM, pero quedó limitado por el tamaño del dataset.</li>
+  <li>📌 Estos resultados sugieren que <strong>la seguridad alimentaria global se analiza mejor con modelos basados en árboles</strong>, ya que permiten interpretar relaciones no lineales entre clima y producción agrícola.</li>
+</ul>
+
+<hr />
+
+<p>✍️ <em>Autor: Liroy Cataldo</em></p>
+
+      </section>
+
+    </article>
+  </div>
+</main>
+
+      </main>
+
+      <aside class="sidebar-right">
+        
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Información principal -->
+    <p>© 2025 - Liroy Cataldo - Estudiante de Ciencia de Datos. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="footer-nav">
+      <a href="/">Inicio</a>
+      <a href="/about/">Sobre mí</a>
+      <a href="/blog/">Blog</a>
+      <a href="/laboratorio/">Laboratorio</a>
+      <!-- <a href="/contact/">Contacto</a> -->
+    </nav>
+
+    <!-- Redes sociales -->
+    <!-- <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div> -->
+  </div>
+</footer>
+
+
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

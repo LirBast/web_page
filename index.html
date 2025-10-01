@@ -1,0 +1,47 @@
+---
+layout: default
+pagination:
+  enabled: true
+  collection: posts
+  per_page: 7
+  permalink: /page:num/
+---
+
+<h1 class="posts-recientes">Posts más recientes</h1>
+
+<ul class="lista-posts">
+  {% for post in paginator.posts %}
+  <li class="post-item">
+    {% include post-container.html post=post %}
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="pagination">
+  <ul>
+    {%- if paginator.previous_page -%}
+      {%- if paginator.previous_page == 1 -%}
+        <li><a href="{{ '/' | relative_url }}">Anterior</a></li>
+      {%- else -%}
+        <li><a href="{{ '/page' | append: paginator.previous_page | append: '/' | relative_url }}">Anterior</a></li>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- assign total = paginator.total_pages -%}
+    {%- assign current = paginator.page -%}
+
+    {%- for i in (1..total) -%}
+      {% if i == current %}
+        <li class="active"><span>{{ i }}</span></li>
+      {% elsif i == 1 %}
+        <li><a href="{{ '/' | relative_url }}">{{ i }}</a></li>
+      {% else %}
+        <li><a href="{{ '/page' | append: i | append: '/' | relative_url }}">{{ i }}</a></li>
+      {% endif %}
+    {%- endfor -%}
+
+    {%- if paginator.next_page -%}
+      <li><a href="{{ '/page' | append: paginator.next_page | append: '/' | relative_url }}">Siguiente</a></li>
+    {%- endif -%}
+  </ul>
+</div>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/blog-layout.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/post-container.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% include head.html %}
+
+  <!-- ===== Contador total de posts (DESACTIVADO). 
+       Para activarlo: quita los comentarios de este <style> y del bloque HTML marcado abajo. ===== -->
+  <!--
+  <style>
+    .taxonomy__footer{
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+      gap:8px;
+      padding-top:10px;
+      margin-top:12px;
+      border-top:1px solid #ddd;
+    }
+    .taxonomy__footer-label{
+      font-size:13px;
+      color:#555;
+    }
+    .taxonomy__total{
+      font-size:14px;
+      font-weight:700;
+      color:#222;
+      background:#e6e6e6;
+      border:1px solid #d3d3d3;
+      padding:4px 10px;
+      border-radius:999px;
+      white-space:nowrap;
+      transition: background .25s ease, border-color .25s ease, transform .2s ease;
+    }
+    .taxonomy__total:hover{
+      background:#dcdcdc;
+      border-color:#cfcfcf;
+      transform: translateY(-1px);
+    }
+    .taxonomy__total:focus-visible{
+      outline:2px solid #333;
+      outline-offset:3px;
+      border-radius:999px;
+    }
+  </style>
+  -->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    {% include header.html %}
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      
+      <!-- Sidebar izquierdo -->
+      <aside class="sidebar-left">
+        {% include sidebar-left.html %}
+      </aside>
+
+      <!-- Contenido principal -->
+      <main class="content">
+        <!-- Contenedor principal -->
+        <div class="contenedor">
+          <div class="contenedor-interno">Entradas del blog por año</div>
+
+          <!-- Lista de años con contador -->
+          <div class="contenedor-interno">
+            {% assign postsPorAnio = site.posts
+               | group_by_exp: "post", "post.date | date: '%Y'"
+               | sort: 'name' | reverse %}
+            <ul class="taxonomy__index">
+              {% for anio in postsPorAnio %}
+                <li>
+                  <a href="#{{ anio.name }}">
+                    <strong>{{ anio.name }}</strong>
+                    <span class="taxonomy__count">{{ anio.items | size }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+
+            <!-- ===== Contador total de posts (DESACTIVADO)
+                 Para activarlo: quita los comentarios de este bloque y del <style> de arriba. ===== -->
+            <!--
+            <div class="taxonomy__footer">
+              {% assign total_posts = site.posts | size %}
+              <span class="taxonomy__footer-label">Total:</span>
+              <a href="{{ '/blog/' | relative_url }}" class="taxonomy__total">
+                {{ total_posts }} {% if total_posts == 1 %}publicación{% else %}publicaciones{% endif %}
+              </a>
+            </div>
+            -->
+          </div>
+
+          <!-- Posts por año en tarjetas pequeñas -->
+          <div class="contenedor-interno posts-por-anio">
+            {% assign postsPorAnio = site.posts
+               | group_by_exp: "post", "post.date | date: '%Y'"
+               | sort: 'name' | reverse %}
+            {% for anio in postsPorAnio %}
+              <h4 id="{{ anio.name }}">{{ anio.name }}</h4>
+              <div class="posts-grid">
+                {% for post in anio.items %}
+                  <div class="post-card">
+                    <a href="{{ post.url | relative_url }}">
+                      <h5>{{ post.title }}</h5>
+                      <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+                      <p class="excerpt">{{ post.excerpt | strip_html | truncate: 110 }}</p>
+                    </a>
+                  </div>
+                {% endfor %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </main>
+
+      <!-- Sidebar derecho -->
+      <aside class="sidebar-right">
+        {% include sidebar-right.html %}
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
+</html>

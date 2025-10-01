@@ -1,0 +1,24 @@
+# Sitio Jekyll sin temas (NO usar themes)
+title: "Liroy Cataldo - Estudiante de Ciencia de Datos"
+description: "Sitio Jekyll construido sin temas predefinidos"
+baseurl: "/web_page" # importante porque está en subcarpeta
+url: "https://lirbast.github.io"
+theme: null
+
+markdown: kramdown
+permalink: /:categories/:title/
+
+# Configuración básica de Jekyll
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+
+pagination:
+  enabled: true
+  per_page: 10
+  title: ":title - Página :num"
+  permalink: '/page:num/'
+  sort_field: 'date'
+  sort_reverse: true

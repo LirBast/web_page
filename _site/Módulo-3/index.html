@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🌍 Módulo 3 – Análisis de Datos de Migración | Liroy Cataldo - Estudiante de Ciencia de Datos</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/post-container.css">
+
+  <!-- CSS específico para posts, cargado solo cuando el layout es 'post' -->
+  
+    <link rel="stylesheet" href="/assets/css/posts.css">
+  
+
+  <!-- Metadatos adicionales -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Liroy Cataldo — Data Science Trainee</h1>
+<nav>
+  <a href="/">Inicio</a>
+  <a href="/about/">Acerca de</a>
+  <a href="/blog/">Blog</a>
+  <a href="/laboratorio/">Laboratorio</a>
+</nav>
+  </header>
+
+  <!-- Contenedor centrado -->
+  <div class="main-container">
+    <div class="layout">
+      <aside class="sidebar-left">
+        <h2></h2>
+<img src="/images/perfil.png" alt="Foto de perfil" style="border-radius: 10px; width: 100%;" />
+<div class="sidebar-text-container" style="text-align: center;">
+  <p>Liroy Cataldo<br>
+  <br>
+  Licenciado en Ciencias de la Ingeniería<br>
+  <br>
+  Ingeniero Civil Industrial<br>
+  <br>
+  Estudiante de Ciencia de Datos</p>
+</div>
+<div style="text-align: center; margin-top: 15px;">
+  <!-- <a href="https://facebook.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #3b5998; color: white;">Facebook</a> -->
+  <!-- <a href="https://twitter.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #00acee; color: white;">Twitter</a> -->
+  <!-- <a href="https://www.linkedin.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #0e76a8; color: white;">LinkedIn</a> -->
+  <!-- <a href="https://www.instagram.com" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #c32aa3; color: white;">Instagram</a> -->
+  <a href="http://www.youtube.com/@BastDataScience/videos" target="_blank" rel="noopener" style="display: inline-block; margin: 5px; padding: 8px 12px; border-radius: 5px; text-decoration: none; background-color: #ff0000; color: white;">YouTube</a>
+</div>
+      </aside>
+
+      <main class="content">
+        <main class="site-main post-page" style="margin:0; padding:0;">
+  <div class="container" style="margin:0; padding:0;">
+    <article class="post post-container" style="margin:0; padding:0; box-shadow:none; border-radius:0; background:none;">
+      
+      <h1 class="post-title" style="margin:0; padding:0;">🌍 Módulo 3 – Análisis de Datos de Migración</h1>
+
+      <section class="post-content" style="margin:0; padding:0;">
+        <p>Este proyecto corresponde al <strong>Módulo 3 del Bootcamp de Ciencia de Datos</strong>.<br />
+El objetivo fue aplicar técnicas de <strong>limpieza, transformación y análisis de datos</strong> con <strong>NumPy y Pandas</strong>, utilizando un dataset de migración internacional.</p>
+
+<h2 id="-repositorio">🌐 Repositorio</h2>
+<ul>
+  <li><a href="https://github.com/LirBast/Portafolio/tree/portafolio/modulo%203">Ver en GitHub</a></li>
+</ul>
+
+<h2 id="️-tecnologías-usadas">🛠️ Tecnologías usadas</h2>
+<ul>
+  <li>Python (Pandas, NumPy)</li>
+  <li>Jupyter Notebook / Google Colab</li>
+</ul>
+
+<h2 id="-requerimientos-implementados">📋 Requerimientos implementados</h2>
+<ol>
+  <li><strong>Limpieza y transformación de datos</strong>
+    <ul>
+      <li>Identificación de valores nulos y duplicados.</li>
+      <li>Detección y filtrado de <em>outliers</em> mediante IQR.</li>
+      <li>Estandarización de categorías en la columna <code class="language-plaintext highlighter-rouge">Razon_Migracion</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Análisis exploratorio (EDA)</strong>
+    <ul>
+      <li>Obtención de estadísticas descriptivas.</li>
+      <li>Cálculo de media, mediana y conteos por categorías.</li>
+      <li>Análisis de PIB e IDH de países de origen y destino.</li>
+    </ul>
+  </li>
+  <li><strong>Agrupamiento y sumarización</strong>
+    <ul>
+      <li>Suma de migrantes por razón de migración.</li>
+      <li>Media del IDH por país de origen.</li>
+      <li>Ordenamiento por cantidad de migrantes.</li>
+    </ul>
+  </li>
+  <li><strong>Filtros y selección de datos</strong>
+    <ul>
+      <li>Migraciones por conflicto.</li>
+      <li>Países con IDH destino &gt; 0.90.</li>
+      <li>Creación de la columna <code class="language-plaintext highlighter-rouge">Diferencia_IDH</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Exportación de datos</strong>
+    <ul>
+      <li>Generación de archivo <code class="language-plaintext highlighter-rouge">Migracion_Limpio.csv</code> con los datos finales.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="-resultados-principales">🎯 Resultados principales</h2>
+<ul>
+  <li>No se detectaron valores nulos ni duplicados.</li>
+  <li>Se identificó y eliminó un <em>outlier</em> en los datos de migración.</li>
+  <li>Se realizó un mapeo de razones de migración para mayor claridad (<code class="language-plaintext highlighter-rouge">Económica → Trabajo</code>, <code class="language-plaintext highlighter-rouge">Conflicto → Guerra</code>).</li>
+  <li>Se calcularon indicadores como media, mediana y PIB promedio.</li>
+  <li>Se obtuvo la distribución de migrantes por razones (económica, conflicto, educativa).</li>
+</ul>
+
+<hr />
+
+<p>✍️ <em>Autor: Liroy Cataldo</em></p>
+
+      </section>
+
+    </article>
+  </div>
+</main>
+
+      </main>
+
+      <aside class="sidebar-right">
+        
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-container">
+    <!-- Información principal -->
+    <p>© 2025 - Liroy Cataldo - Estudiante de Ciencia de Datos. Todos los derechos reservados.</p>
+
+    <!-- Navegación -->
+    <nav class="footer-nav">
+      <a href="/">Inicio</a>
+      <a href="/about/">Sobre mí</a>
+      <a href="/blog/">Blog</a>
+      <a href="/laboratorio/">Laboratorio</a>
+      <!-- <a href="/contact/">Contacto</a> -->
+    </nav>
+
+    <!-- Redes sociales -->
+    <!-- <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div> -->
+  </div>
+</footer>
+
+
+  <script src="/assets/js/script.js"></script>
+
+  <!-- Fuerza que enlaces externos dentro de .post-content abran en nueva pestaña -->
+  <script>
+    (function () {
+      function markAndFixExternalLinks(scope) {
+        var host = location.hostname;
+        var links = (scope || document).querySelectorAll('.post-content a[href^="http"]');
+        links.forEach(function (a) {
+          try {
+            var isExternal = a.hostname && a.hostname !== host;
+            if (isExternal) {
+              a.setAttribute('target', '_blank');
+              a.setAttribute('rel', 'noopener noreferrer');
+
+              // Si algún script intercepta el click, abrimos nosotros
+              a.addEventListener('click', function (e) {
+                if (a.target === '_blank' && e.defaultPrevented) {
+                  window.open(a.href, '_blank', 'noopener,noreferrer');
+                }
+              }, true);
+            }
+          } catch (err) { /* noop */ }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        markAndFixExternalLinks(document);
+      });
+
+      // Si hubiese contenido dinámico, re-aplica (puedes eliminar este observer si no lo necesitas)
+      var observer = new MutationObserver(function (mutations) {
+        for (var i = 0; i < mutations.length; i++) {
+          if (mutations[i].addedNodes && mutations[i].addedNodes.length) {
+            markAndFixExternalLinks(document);
+            break;
+          }
+        }
+      });
+      observer.observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>
