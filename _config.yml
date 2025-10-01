@@ -12,13 +12,10 @@ permalink: /:categories/:title/
 
 # Plugins
 plugins:
-  - jekyll-paginate-v2
+  - jekyll-paginate
   - jekyll-sitemap
 
-pagination:
-  enabled: true
-  per_page: 10
-  title: ":title - Página :num"
-  permalink: '/page:num/'
-  sort_field: 'date'
-  sort_reverse: true
+paginate: 7
+paginate_path: "/page:num/"
+
+# El plugin jekyll-paginate es incluido automáticamente en GitHub Pages

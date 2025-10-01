@@ -1,11 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '3.1.4'
+ruby "3.1.4"
 
-gem 'jekyll', '~> 4.3.2'
-gem 'jekyll-paginate-v2'
-gem 'jekyll-sitemap'
+gem "jekyll", "~> 4.3"
+gem "jekyll-paginate"
+gem "jekyll-sitemap"
 
 # Opcionales recomendados
-# gem 'jekyll-feed'
-# gem 'jekyll-seo-tag'
+# gem "jekyll-feed"
+# gem "jekyll-seo-tag"
